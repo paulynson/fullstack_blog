@@ -1,4 +1,5 @@
 import tile from "../assets/created.jpg";
+import { Link } from "react-router-dom";
 
 const Blogger = ({ topic }) => {
   return (
@@ -16,9 +17,12 @@ const Blogger = ({ topic }) => {
             consectetur adipisicing elit.
           </p>
           <div className="my-5">
-            <button className="w-full py-2 px-6 rounded-full hover:bg-zed hover:text-nvy text-nvy shadow-sm font-bold border-2 border-nvy hover:border-zed bg-transparent cursor-pointer">
+            <Link
+              to="#"
+              className="w-full py-2 px-6 rounded-full hover:bg-zed hover:text-nvy text-nvy shadow-sm font-bold border-2 border-nvy hover:border-zed bg-transparent cursor-pointer"
+            >
               Read More
-            </button>
+            </Link>
           </div>
         </article>
       </div>
